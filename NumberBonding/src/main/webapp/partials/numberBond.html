@@ -1,0 +1,21 @@
+<div ng-controller='numberBondGenerator'>
+	<div id="mainPanel" style="overflow: auto; width: 100px; height: 100px;">	
+		<canvas id="canvas" width="100" height="100"></canvas>
+	</div> 
+	
+	<table width="100%" style="padding: 5px;" class="nb-header" id="nb-footer">
+		<tr>
+			<td align="left" width="20%">
+				<button class="btn btn-default" style="min-width: 60px;" id="genNumberBond" ng-click="generateNew()">New</button>				
+			</td>				
+			<td width="40%" align="center">
+				<span class="score">
+					Score: <span id="score">{{score + '/' + numberOfSumsAttempted}}</span>
+				</span>
+			</td>	
+			<td align="right" width="20%">
+				<button class="btn btn-default" style="min-width: 60px;" id="validateBtn" ng-click='submitAnswer()'>Done</button>
+			</td>	
+		</tr>
+	</table>
+</div>

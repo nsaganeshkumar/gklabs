@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gk</groupId>
+  <artifactId>NumberBonding</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>NumberBonding Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+<repositories>
+        <repository>
+            <id>repo1.maven.org</id>
+            <name>Maven2 repository 1</name>
+            <url>http://repo1.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>repo2.maven.org</id>
+            <name>Maven2 repository 2</name>
+            <url>http://repo2.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>        
+        
+    </repositories>
+	
+  <build>
+    <finalName>NumberBonding</finalName>
+    
+    <plugins>
+        <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <configuration>
+               <source>1.6</source>
+               <target>1.6</target>
+           </configuration>
+       	</plugin>
+       	
+        <plugin>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>8.1.2.v20120308</version>
+            <configuration>
+                <scanIntervalSeconds>10</scanIntervalSeconds>
+            </configuration>
+        </plugin>
+    </plugins>
+        
+  </build>
+  
+</project>

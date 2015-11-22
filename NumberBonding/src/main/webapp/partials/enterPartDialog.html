@@ -1,0 +1,31 @@
+<style>
+  	.modal-backdrop {
+		  position: fixed;
+		  top: 0px;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  z-index: 1040;
+		  background-color: #000000;
+	}
+</style>
+
+<div ng-controller="enterPart" class="dialog popup-dialog">
+	<table cellspacing="0" cellpadding="10px" width="100%" border="0">
+		<tr class="blue-title">			
+			<td width="100%" align="center" style="font-size: 16px; color: #FFFFFF; font-weight: bold">
+				Enter number
+			</td>
+		</tr>
+	</table>	
+	
+	<div style="padding: 10px; border-bottom: 1px solid #999999;">
+		<label style="margin-right: 40px;" for="name">Number</label>
+		<input type="tel" size="10" ng-model="selectedPart.partObj.value" class="partValField"/>			
+	</div>
+	
+	<div align="center" style="padding: 5px;">			
+		<button class="btn btn-grey" style="margin: 5px" ng-click="setNumber()">Submit</button>
+		<button class="btn btn-grey" style="margin: 5px" ng-click="closeDialog()">Cancel</button>
+    </div>
+</div>
