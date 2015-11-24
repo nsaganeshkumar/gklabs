@@ -1,1 +1,0 @@
-copy target\NumberBonding.war c:\jetty\webapps
